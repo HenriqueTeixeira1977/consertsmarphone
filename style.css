@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    background: rgb(169, 169, 169);
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all .1s ease;
+}
+header{
+    background: black;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding: 0 7%;
+}
+nav{
+    padding: 10px;
+}
