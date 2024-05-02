@@ -277,19 +277,18 @@ main .moti .container .card .button a:hover{
 
 /*-------  SEÇÃO SOLUÇÕES  --------*/
 
-main .solucoes {
-    background: red;
+main .solucoes {background: rgb(255, 0, 0);
     height: 100vh;
     padding: 100px;
     margin: auto;
 }
-main .solucoes .container {background: yellow;
+main .solucoes .container {background: rgba(255, 255, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
-main .solucoes .container .card {background: blue;
+main .solucoes .container .card {background: rgba(0, 0, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
