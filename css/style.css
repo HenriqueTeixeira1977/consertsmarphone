@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    /*background: rgb(255, 255, 255);*/
+    background: rgba(255, 255, 255, 0);
     font-family: montserrat;
     margin: 0;
     padding: 0;
@@ -13,20 +13,11 @@
     scroll-behavior: smooth;
     transition: all .9s ease;
 }
-body{/*background:greenyellow;*/
+body{background:rgba(172, 255, 47, 0);
     margin: auto;
     padding: 0;
 }
 header{
-    /*background: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    height: 130px;
-    margin: auto;
-    padding: 0 5%;*/
     background: rgb(0, 0, 0);
     z-index: 999;
     position: fixed;
@@ -40,7 +31,7 @@ header{
     margin: auto;
     padding: 0 7%;
 }
-header .logo{/*background: yellow;*/
+header .logo{background: rgba(255, 255, 0, 0);
    margin: 10px;
    padding: 10px;
 }
@@ -56,13 +47,13 @@ header .logo h2{
 header .logo h3{
     font-size: 1rem;
 }
-header nav{/*background: red;*/
+header nav{background: rgba(255, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
 }
-header nav a{/*background: yellow;*/
+header nav a{background: rgba(255, 255, 0, 0);
     margin: 0 0px;
     padding: 0 20px;
     font-size: 1rem;
@@ -87,24 +78,26 @@ header nav .button:hover{
 
 /* ------   SECÇÃO MAIN  -------*/
 
-main{/*background: rebeccapurple;*/
-    margin: 100px 0 auto;
+main{background: rgba(102, 51, 153, 0);
+    margin: 120px 0 auto;
 }
 
-main .home{background: #ffffff;
+main .home{background: #cacaca00;
     width: 100%;
     height: 100vh;
     margin: auto;
+    padding: 180px 0;
 }
-main .home .container {/*background-color: blue;*/
+main .home .container {background-color: rgba(0, 0, 255, 0);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
     width: 85%;
     height: 70%;
+    padding: 0px 0;
 }
-main .home .container article {/*background: brown;*/
+main .home .container article {background: rgba(165, 42, 42, 0);
     display: flex;
     justify-content:center;
     align-items:flex-start;
@@ -127,9 +120,12 @@ main .home .container article h2{
     color: black;
 }
 main .home .container article h3{
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.7rem;
+    font-weight: 500;
     line-height: 1;
+}
+main .home .container article p{
+    font-size: 1.4rem;
 }
 main .home .container article a{
     background: #4ACEA9;
@@ -157,39 +153,38 @@ main .home .container aside img{/*background: red;*/
 
 /* ------   SECÇÃO SOBRE  -------*/
 
-main .sobre {/*background: rebeccapurple;*/
-    background: rgb(228, 228, 228);
+main .sobre {background: rgba(102, 51, 153, 0);
     width: 100%;
     height: 100vh;
     margin: auto;
     padding-top: 100px;
 }
-main .sobre .container {/*background: red;*/
+main .sobre .container {background: rgba(255, 0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 90%;
+    width: 85%;
+    height: 100%;
     margin: auto;
 }
-main .sobre .container aside {/*background: yellow;*/
+main .sobre .container aside {background: rgba(255, 255, 0, 0);
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
     height: 90%;
 }
 main .sobre .container aside img{
-    width: 70%;
+    width: 75%;
 }
-main .sobre .container article {/*background: rgb(0, 42, 255);*/
+main .sobre .container article {background: rgba(0, 42, 255, 0);
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     width: 50%;
     height: 90%;
-    padding: 50px;
+    padding: 50px 0;
 }
 main .sobre .container article h1{
     font-size: 3rem;
@@ -216,7 +211,7 @@ main .sobre .container article a{background: green;
     border-radius: 5px;
 }
 
-/* -------- SEÇÃO MOTIVOS  ------*/
+/* -------- SEÇÃO DIFERENCIAIS  ------*/
 
 main .moti {/*background: rgb(38, 255, 0);*/
     margin: auto;
@@ -256,13 +251,14 @@ main .moti .container .card i{/*background: blue;*/
     margin: 5px;
 }
 main .moti .container .card h3{/*background: greenyellow;*/
+    font-size: 1.5rem;
     margin-bottom: 0px;
 }
-main .moti .container .card p {/*background: #ffd748;*/
+main .moti .container .card p {background: #ffd74800;
     width: 250px;
     height: 50%;
     margin: 20px 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-align: justify;
 }
 main .moti .container .card a {
@@ -279,16 +275,125 @@ main .moti .container .card .button a:hover{
     color: #ffffff;
 }
 
+/*-------  SEÇÃO SOLUÇÕES  --------*/
+
 main .solucoes {
     background: red;
     height: 100vh;
     padding: 100px;
+    margin: auto;
+}
+main .solucoes .container {background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+main .solucoes .container .card {background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    padding: 20px;
+}
+main .solucoes .container .card .img-fundo a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    position: relative;
+    box-shadow: 0px 7px 10px #0000008b;    
 }
 
-main .contatos {
-    background: yellow;
-    height: 100vh;
+/*--------  SEÇÃO CONTATOS  --------*/
+
+main .contatos {background:rgba(189, 189, 189, 0);
     padding: 100px;
+}
+main .contatos .container {background: #4acea900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    padding: 0px 0;
+}
+main .contatos .container .ctt-txt {background: rgba(54, 54, 54, 0);
+    width: 50%;
+    height: 80%;
+    padding: 30px;
+}
+main .contatos .container .ctt-txt h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+main .contatos .container .ctt-txt p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+main .contatos .container .ctt-txt .button {background: #00000000;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    padding: 20px 0;
+}
+main .contatos .container .ctt-txt .button a {
+    background: #00ff08;
+    padding: 20px 80px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+    border-radius: 10px;
+}
+
+main .contatos .container .form{background:rgba(46, 139, 86, 0);
+    width: 50%;
+    height: 80%;
+    padding: 30px;
+    position: relative;
+}
+main .contatos .container .form h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+main .contatos .container .form p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+main .contatos .container .form form input, form textarea{
+    width: 100%;
+    padding: 15px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+main .contatos .container .form textarea {
+    resize: none;
+    height: 140px;
+}
+main .contatos .container .form .submit {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 500;
+    background: #00ff00;
+    transition: all .45s ease;
+}
+main .contatos .container .form .submit:hover {
+    background: #4ACEA9;
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 
@@ -302,5 +407,7 @@ footer{
     color: aliceblue;
     margin: auto;
     padding: 30px;
-
+}
+footer a{
+    color: #00ff00;
 }
