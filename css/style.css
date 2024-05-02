@@ -11,14 +11,14 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    transition: all .1s ease;
+    transition: all .9s ease;
 }
-body{
-    background:greenyellow;
+body{/*background:greenyellow;*/
     margin: auto;
+    padding: 0;
 }
 header{
-    background: black;
+    /*background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,48 +26,85 @@ header{
     width: 100%;
     height: 130px;
     margin: auto;
-    padding: 0 5%;
+    padding: 0 5%;*/
+    background: rgb(0, 0, 0);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 0 7%;
 }
-header .logo{background: yellow;
-    margin: 10px;
-    padding: 10px;
+header .logo{/*background: yellow;*/
+   margin: 10px;
+   padding: 10px;
+}
+header .logo img {
+    width: 60%;
 }
 header .logo h1{
     font-size: 1.6rem;
 }
 header .logo h2{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 header .logo h3{
-    font-size: .8rem;
+    font-size: 1rem;
 }
-header nav{background: red;
+header nav{/*background: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 0;
 }
-header a{background: yellow;
-    margin: 0 20px;
+header nav a{/*background: yellow;*/
+    margin: 0 0px;
+    padding: 0 20px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+header nav a:hover{
+    color: #4ACEA9;
+}
+header nav .botao .button{
+    background: green;
+    padding: 10px 25px;
+    border: white solid 3px;
+    border-radius: 5px;
+    color: aliceblue;
+}
+header nav .button:hover{
+    background: rgb(47, 255, 68);
+    font-weight: 400;
+    color: rgb(0, 0, 0);
 }
 
 /* ------   SECÇÃO MAIN  -------*/
 
-main{background: rebeccapurple;
-    height: 100vh;
-    margin: auto;
+main{/*background: rebeccapurple;*/
+    margin: 100px 0 auto;
 }
-main .home{background: green;
-    height: 100vh;
-    margin: auto;
 
+main .home{background: #ffffff;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
 }
-main .container {background-color: blue;
+main .home .container {/*background-color: blue;*/
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    width: 90%;
+    width: 85%;
     height: 70%;
 }
-main .container article {background: brown;
+main .home .container article {/*background: brown;*/
     display: flex;
     justify-content:center;
     align-items:flex-start;
@@ -75,25 +112,195 @@ main .container article {background: brown;
     width: 50%;
     height: 90%;
 }
-main .container article h1{
-    font-size: 5rem;
-    line-height: .7;
+main .home .container article h1{
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.5;
 }
-main .container article h2{
+main .home .container article h1 span{
+    color: #4ACEA9;
+}
+main .home .container article h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 0;
+    color: black;
+}
+main .home .container article h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+}
+main .home .container article a{
+    background: #4ACEA9;
+    margin: 30px 0;
+    padding: 10px 60px;
+    border: rgb(113, 113, 113) solid 3px;
+    border-radius: 5px;
     font-size: 2rem;
-    line-height: 2;
+    font-weight: 700;
+    color: black;
 }
-main .container article h3{
-    font-size: 1rem;
+main .home .container article a:hover{
+    background:rgb(47, 255, 68);
 }
-main .container article a{background: red;
-    margin: 20px 0;
-    padding: 20px 50px;
+main .home .container aside {/*background: turquoise;*/
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    width: 50%;
+    height: 90%;
 }
-main .container aside {background: turquoise;
+main .home .container aside img{/*background: red;*/
+    width: 90%;
+}
+
+/* ------   SECÇÃO SOBRE  -------*/
+
+main .sobre {/*background: rebeccapurple;*/
+    background: rgb(228, 228, 228);
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 100px;
+}
+main .sobre .container {/*background: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+main .sobre .container aside {/*background: yellow;*/
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 90%;
+}
+main .sobre .container aside img{
+    width: 70%;
+}
+main .sobre .container article {/*background: rgb(0, 42, 255);*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 50%;
+    height: 90%;
+    padding: 50px;
+}
+main .sobre .container article h1{
+    font-size: 3rem;
+}
+main .sobre .container article h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+main .sobre .container article h3{
+    font-size: 1.5rem;
+}
+main .sobre .container article p{
+    margin: 5px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: justify;
+}
+main .sobre .container article a{background: green;
+    margin-top: 20px;
+    padding: 20px 80px;
+    font-size: 1.5rem;
+    color: aliceblue;
+    border: white solid 3px;
+    border-radius: 5px;
+}
+
+/* -------- SEÇÃO MOTIVOS  ------*/
+
+main .moti {/*background: rgb(38, 255, 0);*/
+    margin: auto;
+    padding: 100px;
+    height: 100vh;
+    text-align: center;
+}
+main .moti .title h2 {
+    font-size: 3rem;
+    margin: 20px;
+}
+main .moti .container {/*background: yellow;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    padding: 0px;
+}
+main .moti .container .card{/*background: rebeccapurple;*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+    height: 90%;
+    margin: 0 10px;
+    padding: 20px 20px;
+    text-align: center;
+    border: #4ACEA9 solid 3px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px 0px #0000002f;
+}
+main .moti .container .card i{/*background: blue;*/
+    font-size: 5rem;
+    margin: 5px;
+}
+main .moti .container .card h3{/*background: greenyellow;*/
+    margin-bottom: 0px;
+}
+main .moti .container .card p {/*background: #ffd748;*/
+    width: 250px;
+    height: 50%;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+main .moti .container .card a {
+    background: #4ACEA9;
+    margin: 20px 10px 20px 10px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000000;
+}
+main .moti .container .card .button a:hover{
+    background: green;
+    color: #ffffff;
+}
+
+main .solucoes {
+    background: red;
+    height: 100vh;
+    padding: 100px;
+}
+
+main .contatos {
+    background: yellow;
+    height: 100vh;
+    padding: 100px;
+}
+
+
+footer{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    color: aliceblue;
+    margin: auto;
+    padding: 30px;
+
 }
