@@ -1,11 +1,11 @@
-
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @media screen and (min-width: 1367px) and (max-width: 10000px){
-
-    *{
+    body{
+        background: blue;
+    }*{
         background: rgba(255, 0, 0, 0);
         font-family: montserrat;
         margin: 0;
@@ -42,20 +42,16 @@
         transition: all .1s ease;
     }
     header.sticky .btn{
-        color: var(--azul);
+        display: none;
+        color: rgb(255, 168, 168);
     }
-    header.sticky .logotipo{
-        color: var(--azul);
-    }
-    header .menu.active{
+
+    header nav .menu.active{
         right: 0;
     }
-    header .menu .close-btn{
-        color: #FFFFFF;
-        position: absolute;
-        top: 0;
-        left: 90%;
-        margin: 20px 0px 0px 0px;
+    header .btn{
+        display: none;
+
     }
     header .logo{background: rgba(255, 255, 0, 0);
     margin: 10px;
