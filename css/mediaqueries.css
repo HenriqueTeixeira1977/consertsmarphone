@@ -247,15 +247,108 @@
         border-radius: 3px;
         color: white;
     }
-    
-    main .solucoes {
-        height: 2000px;
-        padding: 100px 0 0 0;
+
+    main .solucoes {background: #00ff0000;
+        padding-top: 120px;
+    }
+    main .solucoes .title {
+        margin-bottom: 20px;
+        font-size: 2rem;
+        text-align: center;
     }
     main .solucoes .container{
-        background: #2b2b2b4e;
+        background: #2b2b2b00;        
     }
-    
+    main .solucoes .container .card{
+        background: rgba(255, 0, 0, 0);
+        display: flex;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    main .solucoes .container .card img {
+        width: 35%;
+    }
+    main .solucoes .container .card .info{
+        background: rgb(219, 219, 219);
+        padding: 10px;
+        border: #000000 solid 1px;
+        box-shadow: 3px 3px 6px #cacaca;
+    }
+    main .solucoes .container .card .info h1{
+        margin-bottom: 5px;
+        font-size: 1.2rem;
+    }
+    main .solucoes .container .card .info p{
+        font-size: .8rem;
+        margin-bottom: 10px;
+    }
+    main .solucoes .container .card .info .button{
+        font-size: 1rem;
+        font-weight: 400;
+        color: #00ff00;
+        padding: 5px 10px;
+        background-color: #000000;
+        border-radius: 5px;
+    }
+
+    main .contatos{
+        background: #00ac0000;
+        display: block;
+        padding-top: 100px;
+        text-align: center;
+    } 
+    main .contatos .container{
+        background: #ff4d0000;
+    }
+    main .contatos .container .ctt-txt{
+        background: rgba(102, 51, 153, 0);
+    }
+    main .contatos .container .ctt-txt .contact-data{
+        background: rgba(144, 144, 144, 0);
+        padding: 20px 0;
+    }
+    main .contatos .container .ctt-txt .button{
+        background: #00ff00;
+        margin-bottom: 30px;
+        padding: 20px;       
+    }
+    main .contatos .container .form{
+        background: rgba(255, 255, 0, 0);
+        padding: 20px;
+    }
+    main .contatos .container .form p{
+        margin: 10px 0;
+    }
+    main .contatos .container .form form input, form textarea{
+        background: #c5c5c5;
+        color: #000000;
+        width: 100%;
+        padding: 10px;
+        margin: 3px;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        border-radius: 5px;
+    }
+    main .contatos .container .form textarea {
+        resize: none;
+        height: 100px;
+    }
+    main .contatos .container .form .submit{
+        background: #06c306;
+    }
+
+    footer{background: #000000;
+        padding: 10px;
+        font-size: .7rem;
+        text-align: center;
+        color: #00ff00;
+    }
+    footer a{
+        font-size: .5rem;
+        color: white;
+    }
+
 }
 
 

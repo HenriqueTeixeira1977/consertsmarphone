@@ -448,12 +448,11 @@
     main .contatos .container .form form input, form textarea{
         width: 100%;
         padding: 15px;
-        background: #000000;
+        background: #9dffa1;
         color: #ffffff;
         border: none;
         outline: none;
         font-size: 1rem;
-
         border-radius: 8px;
         margin-bottom: 10px;
     }
@@ -474,6 +473,9 @@
         transform: scale(1.01);
         cursor: pointer;
     }
+
+
+    
     footer{
         background: black;
         display: flex;
