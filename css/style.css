@@ -97,10 +97,7 @@
         font-weight: 400;
         color: rgb(0, 0, 0);
     }
-
-
     /* ------   SECÇÃO MAIN  -------*/
-
 
     main{background: rgba(102, 51, 153, 0);
         margin: 120px 0 auto;
@@ -475,7 +472,7 @@
     }
 
 
-    
+
     footer{
         background: black;
         display: flex;
