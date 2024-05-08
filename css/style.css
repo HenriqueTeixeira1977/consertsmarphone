@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-@media screen and (min-width: 1367px) and (max-width: 10000px){
+@media screen and (min-width: 1370px) and (max-width: 7680px){
     body{
         background: blue;
     }*{
