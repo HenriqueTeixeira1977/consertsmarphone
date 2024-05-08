@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: all .3s ease;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh
+}
+section .box{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    padding: 20px;
+}
+section .box h1{
+    font-size: 3rem;
+    text-align: center;
+    line-height: .9;
+    padding: 10px;
+    color: green;
+}
+section .box h2{
+    font-size: 2rem;
+    text-align: center;
+    line-height: .9;
+    padding: 10px;
+}
+section .box h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: .9;
+}
+section .box a{
+    margin: 20px;
+    padding: 10px 50px;
+    background: green;
+    color: white;
+    border-radius: 10px;
+}
+section .box a:hover{
+    background: rgb(1, 189, 1);
+    color: white;
+    border-radius: 20px;
+}

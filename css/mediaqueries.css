@@ -1048,7 +1048,7 @@
         margin: auto;
     }
     main .solucoes .title h3{
-        font-size: 3rem;
+        font-size: 2rem;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -1062,8 +1062,8 @@
         display: flex;
         align-items: flex-end;
         width: 450px;
-        height: 650px;
-        padding: 5rem 3rem;
+        height: 450px;
+        padding: 3rem 2rem;
         position: relative;
         transition: 0.5s all ease-in-out;
     }
@@ -1131,25 +1131,27 @@
         box-shadow: 0 7px 10px rgba(0, 0, 0, 0.5);
     }
     /*--------  SEÇÃO CONTATOS  --------*/
-    main .contatos {background:rgba(189, 189, 189, 0);
-        padding: 100px 0;
+    main .contatos {
+        height: 90vh;
+        margin: 0;
+        padding-top: 100px;
     }
-    main .contatos .container {background: #4acea900;
+    main .contatos .container {
         display: flex;
         justify-content: center;
-        align-items: center;
         width: 90%;
-        height: 100vh;
+        height: 90%;
         margin: auto;
-        padding: 0px 0;
+        border: #000000 solid 3px;
+
     }
-    main .contatos .container .ctt-txt {background: rgba(54, 54, 54, 0);
+    main .contatos .container .ctt-txt {
         width: 50%;
-        height: 80%;
+        height: 100%;
         padding: 30px;
     }
     main .contatos .container .ctt-txt h2{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
     main .contatos .container .ctt-txt p{
@@ -1157,28 +1159,24 @@
         font-weight: 500;
         margin-bottom: 10px;
     }
-    main .contatos .container .ctt-txt .button {background: #00000000;
+    main .contatos .container .ctt-txt .button {
         display: flex;
         align-items: center;
-        height: 20%;
-        padding: 20px 0;
     }
     main .contatos .container .ctt-txt .button a {
         background: #00ff08;
-        padding: 20px 80px;
+        padding: 10px 80px;
         font-size: 1rem;
         font-weight: 500;
         color: #000000;
-        border-radius: 10px;
+        border-radius: 5px;
     }
-    main .contatos .container .form{background:rgba(46, 139, 86, 0);
+    main .contatos .container .form{
         width: 50%;
-        height: 80%;
         padding: 30px;
-        position: relative;
     }
     main .contatos .container .form h2{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 20px;
     }
     main .contatos .container .form p{
@@ -1189,17 +1187,18 @@
     main .contatos .container .form form input, form textarea{
         width: 100%;
         padding: 10px;
-        background: #9dffa1;
+        background: #dfdfdf;
         color: #ffffff;
         border: none;
         outline: none;
         font-size: 1rem;
         border-radius: 8px;
+        box-shadow: 5px 5px 5px #0000004a;
         margin-bottom: 10px;
     }
     main .contatos .container .form textarea {
         resize: none;
-        height: 140px;
+        height: 75px;
     }
     main .contatos .container .form .submit {
         display: inline-block;
