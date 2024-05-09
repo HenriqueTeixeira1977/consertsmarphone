@@ -59,5 +59,7 @@ section .box a{
 section .box a:hover{
     background: rgb(1, 189, 1);
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 10px 70px;
+
 }
