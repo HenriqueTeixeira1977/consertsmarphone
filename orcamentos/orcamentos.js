@@ -1,31 +1,11 @@
-document.getElementById('formulario').addEventListener('submit', function(e) {
-    e.preventDefault(); // Evita o envio padrão do formulário
-    
-    // Geração do código de ordem de serviço com 5 dígitos
-    var codigo = Math.floor(10000 + Math.random() * 90000);
-    document.getElementById('codigo').value = codigo;
-    
-    // Aqui você pode adicionar a lógica para enviar os dados do formulário para o servidor
-    // Por exemplo, você pode usar XMLHttpRequest ou Fetch API para enviar uma solicitação POST
-    // com os dados do formulário para o servidor
-    
-    // Exemplo de envio usando Fetch API:
-    /*
-    fetch('URL_DO_SERVIDOR', {
-      method: 'POST',
-      body: new FormData(document.getElementById('formulario'))
-    })
-    .then(response => {
-      if (response.ok) {
-        alert('Formulário enviado com sucesso!');
-        // Você pode redirecionar o usuário para outra página após o envio bem-sucedido
-        // window.location.href = 'pagina_de_sucesso.html';
-      } else {
-        alert('Ocorreu um erro ao enviar o formulário. Por favor, tente novamente.');
-      }
-    })
-    .catch(error => {
-      console.error('Erro:', error);
-    });
-    */
-  });
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwLIjrOnllDf0Q9g0e5NgUFbMa58vyc9mDQP5J-gMeSBYjPw_4fHfLX25URB2e9v7wL/exec'
+
+const form = document.forms['contact-form']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thank you! your form is submitted successfully." ))
+  .then(() => { window.location.reload(); })
+  .catch(error => console.error('Error!', error.message))
+})

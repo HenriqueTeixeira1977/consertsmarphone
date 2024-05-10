@@ -8,27 +8,62 @@
 </head>
 <body>
     <div class="box">
-      <h2>Formulário de Assistência Técnica em Celulares</h2>
-      <form id="formulario">
-        <label for="data">Data:</label><br>
-        <input type="date" id="data" name="data" placeholder="Data" required><br><br>
-        <label for="hora">Hora:</label><br>
-        <input type="time" id="hora" name="hora" required><br><br>
-        <label for="codigo">Código de Ordem de Serviço:</label><br>
-        <input type="text" id="codigo" name="codigo" readonly><br><br>
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" name="nome" placeholder="Seu Nome" required><br><br>
-        <label for="telefone">Telefone:</label><br>
-        <input type="tel" id="telefone" name="telefone" placeholder="Whatsapp" required pattern="[0-9]{10,11}"><br><br>
-        <label for="marca">Marca do Celular:</label><br>
-        <input type="text" id="marca" name="marca" placeholder="Marca do Aparelho" required><br><br>
-        <label for="modelo">Modelo do Celular:</label><br>
-        <input type="text" id="modelo" name="modelo" placeholder="Modelo do Aparelho" required><br><br>
-        <label for="problema">Descrição do Problema:</label><br>
-        <textarea id="problema" name="problema" rows="4" required></textarea><br><br>
-        <button type="submit">Enviar</button>
+      <h1>Formulário de Assistência Técnica em Celulares</h1>
+      <form method="post" action="" name="contact-form">
+        <div class="form1">
+
+          <!--  <label for="data">Data:</label><br>  -->
+          <input type="date" id="data" name="data" placeholder="Data" required><br><br>
+          <!--  <label for="hora">Hora:</label><br>  -->
+          <input type="time" id="hora" name="hora" required><br><br>
+          <!--  <label for="codigo">Código de Ordem de Serviço:</label><br>  -->
+          <input type="text" id="codigo" name="codigo" readonly><br><br>
+
+        </div>
+        
+        <div class="form2">
+
+          <h3>Informações para cadastro de Cliente Vip</h3>          
+          <!--  <label for="nome">Nome:</label><br>  -->
+          <input type="text" id="nome" name="nome" placeholder="Seu Nome" required><br><br>
+          
+          <!--  <label for="telefone">Telefone:</label><br>  -->
+          <input type="cpf" id="cpf" name="cpf" placeholder="CPF" required><br><br>
+         
+          <!--  <label for="telefone">Telefone:</label><br>  -->
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="Whatsapp" required><br><br>
+          
+          <!--  <label for="telefone">Telefone:</label><br>  -->
+          <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+          
+          <!--  <label for="telefone">Telefone:</label><br>  -->
+          <input type="text" id="endereco" name="endereco" placeholder="Endereço" required><br><br><br>
+          
+          
+          
+          <h3>Informações do Aparelho</h3>
+          <!--  <label for="marca">Marca do Celular:</label><br>  -->
+          <select type="text" id="tipo" name="tipo" placeholder="Tipo de Aparelho" required>
+            <option value="selecione">Selecione um Tipo...</option>
+            <option value="celular">Celular</option>
+            <option value="tablet">Tablet</option>
+            <option value="smartwatch">Smartwatch</option>
+            <option value="notebook">Notebook</option>
+          </select>
+            <br><br>
+          <!--  <label for="marca">Marca do Celular:</label><br>  -->
+          <input type="text" id="marca" name="marca" placeholder="Marca do Aparelho" required><br><br>
+          <!--  <label for="modelo">Modelo do Celular:</label><br>  -->
+          <input type="text" id="modelo" name="modelo" placeholder="Modelo do Aparelho" required><br><br>
+          
+          <!--  <label for="problema">Descrição do Problema:</label><br>  -->
+          <textarea id="problema" name="problema" placeholder="Descreva o problema" rows="4" required></textarea><br><br>
+          
+          <button type="submit">Solicitar Orçamento</button>
+        </div>
       </form>
     </div>
+    <script src="../orcamentos/orcamentos.js"></script>
     
 </body>
 </html>
