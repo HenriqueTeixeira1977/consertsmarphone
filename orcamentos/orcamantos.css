@@ -24,7 +24,12 @@ body{background: red;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column;
+    flex-direction: column;
     width: 85%;
     padding: 50px;
 }
+.box h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
