@@ -116,7 +116,7 @@
     nav a{ 
         display: none;    
     }
-
+/*----------  SEÇÃO HOME(Topo)  ---------*/
     main .home{
         display: flex;
         justify-content: center;
@@ -138,8 +138,8 @@
 
     }
     main .home .container aside img{
-        width: 70%;
-        margin-top: 80px;
+        width: 60%;
+        margin-top: 40px;
     }
     main .home .container article{
         height: 50%;
@@ -162,100 +162,74 @@
     }
     main .home .container article p{
         margin-bottom: 40px;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     main .home .container article a{
         background: #059000;
         margin: 50px 0;
-        padding:  15px 50px;
+        padding:  10px 10%;
         font-size: 1.5rem;
         font-weight: 500;
         color: white;
-        border-radius: 20px;
+        border-radius: 5px;
     }
-
-    main .sobre{
-        background: #c1ffc1;
-        height: 100vh;
-        padding: 10px;
-    }
-    main .sobre .container{
-        padding: 70px 0 0 0;
-    }
-    main .sobre .container aside img{
-        display: none;
-        margin: auto;
-        width:  30%;
-    }
-    main .sobre .container article{
-        height: 70vh;
-        text-align: right;
-    }
-    main .sobre .container article h1{
-        font-size: 1.7rem;
-    }
-    main .sobre .container article h2{
-        margin-bottom: 10px;
-        font-size: 1.3rem;
-    }
-    main .sobre .container article h3{
-        margin-top: 10px;
-        font-size: 1.3rem;
-    }
-    main .sobre .container article p{
-        padding: 12px;
-        font-size: 1.1rem;
-    }
-    main .sobre .container article a{
-        background: #00ac00;
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        padding: 10px 50px;
-        border-radius: 10px;
-        color: #ffffff;
-        font-size: 1.2rem;
-        font-weight: 500;
-    }
-
-    main .moti {
-        height: 1350px;
+/*----------  SEÇÃO LOJA  ---------*/
+    main .loja {background: rgba(0, 255, 225, 0);
+        height:2000px;
         padding-top: 80px;
         text-align: center;
     }
-    main .moti .container {
+    main .loja .container {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        margin-top: 20px;
         padding: auto;
     }
-    main .moti .card{
-        max-width: 300px;
-        height: 300px;
-        margin: 3px 20px;
-        padding: 30px;
-        border: #4acea9 solid 3px; 
+    main .loja .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 250px;
+        height: 390px;
+        margin: 20px 20px;
+        padding: 0 15px;
+        box-shadow: 5px 5px 5px 5px rgba(125, 125, 125, 0.2);
+        border: #4acea900 solid 3px;
         border-radius: 10px;
     }
-    main .moti .container .card i{
-        font-size: 2rem;
-    }
-    main .moti .container .card h3{
-        font-size: 1.1rem;
-        margin: 10px;
-    }
-    main .moti .container .card p{
-        font-size: 1rem;
+    main .loja .container .card img{
+        width: 50%;
         margin-bottom: 10px;
     }
-    main .moti .container .card a{
+    main .loja .container .card h2{
+        font-size: 1.2rem;
+    }
+    main .loja .container .card h3{
+        font-size: 1.1rem;
+        color: blue;
+        margin: 0px;
+    }
+    main .loja .container .card h4{
+        font-size: .8rem;
+        font-weight: 500;
+        text-decoration: line-through;
+        color: red;
+        margin: 0px;
+    }
+    main .loja .container .card p{
+        font-size: .7rem;
+        margin-bottom: 30px;
+    }
+    main .loja .container .card a{
         background: #00ac00;
-        padding: 4px 30px;
+        padding: 7px 25%;
         border-radius: 3px;
         color: white;
     }
-
+/*----------  SEÇÃO SOLUCOES  ---------*/
     main .solucoes {
         padding-top: 100px;
     }
@@ -298,7 +272,84 @@
         background-color: #000000;
         border-radius: 5px;
     }
-
+/*----------  SEÇÃO DIFERENCIAIS  ---------*/
+    main .moti {
+        height: 1350px;
+        padding-top: 80px;
+        text-align: center;
+    }
+    main .moti .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: auto;
+    }
+    main .moti .card{
+        max-width: 300px;
+        height: 300px;
+        margin: 3px 20px;
+        padding: 30px;
+        border: #4acea9 solid 3px; 
+        border-radius: 10px;
+    }
+    main .moti .container .card i{
+        font-size: 2rem;
+    }
+    main .moti .container .card h3{
+        font-size: 1.1rem;
+        margin: 10px;
+    }
+    main .moti .container .card p{
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+    main .moti .container .card a{
+        background: #00ac00;
+        padding: 4px 30px;
+        border-radius: 3px;
+        color: white;
+    }
+/*----------  SEÇÃO SOBRE  ---------*/
+    main .sobre{
+        padding: 25px 20px;
+    }
+    main .sobre .container{
+        padding: 70px 0 0 0;
+    }
+    main .sobre .container aside img{
+        display: none;
+        margin: auto;
+        width:  30%;
+    }
+    main .sobre .container article{
+        height: 70vh;
+        text-align: right;
+    }
+    main .sobre .container article h1{
+        font-size: 1.7rem;
+    }
+    main .sobre .container article h2{
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+    }
+    main .sobre .container article h3{
+        margin-top: 10px;
+        font-size: 1.3rem;
+    }
+    main .sobre .container article p{
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+    main .sobre .container article a{
+        background: green;
+        padding: 3% 10%;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: #ffffff;
+    }
+/*----------  SEÇÃO CONTATOS  ---------*/
     main .contatos{
         display: block;
         padding-top: 100px;
@@ -315,16 +366,17 @@
         padding: 20px 0;
     }
     main .contatos .container .ctt-txt .button{
-        background: #00ff00;
-        margin-bottom: 30px;
-        padding: 20px;
-        font-size: 1.3rem;
-        font-weight: 500;
-        color: #ffffff;
-        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    main .contatos .container .ctt-txt .button a{ 
+        padding: 10px 50px;
+        background: green;
+        color: white;
+        border-radius: 5px;
     }
     main .contatos .container .form{
-        background: rgba(255, 255, 0, 0);
+        margin-top: 30px;
         padding: 20px;
     }
     main .contatos .container .form p{
@@ -349,6 +401,7 @@
         background: #06c306;
     }
 
+/*----------  SEÇÃO FOOTER(Rodapé)  ---------*/
     footer{
         display: flex;
         justify-content: center;
