@@ -2005,6 +2005,79 @@
     main .home .container aside img{    
         width: 90%;
     }
+    /* ------   SECÇÃO LOJA  -------*/
+
+    main .loja {
+        margin: auto;
+        padding: 100px 0;
+        height: 100vh;
+        text-align: center;
+    }
+    main .loja .title h2 {
+        font-size: 3rem;
+    }
+    main .loja .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    main .loja .container .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 20%;
+        height: 80%;
+        margin: 5px 5px;
+        padding: 0px 15px;
+        text-align: center;
+        border: green solid 3px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 0px #0000002f;
+    }
+    main .loja .container .card:hover{
+        border: green solid 3px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgb(171, 251, 175));
+        z-index: 2;
+        transition: 0.9s all;
+        transform: translateY(-10px)
+    }
+    main .loja .container .card i{
+        font-size: 5rem;
+        margin: 5px;
+    }
+    main .loja .container .card h3{
+        font-size: 1.5rem;
+    }
+    main .loja .container .card p {
+        height: 150px;
+        margin: 20px 0;
+        font-size: 1.3rem;
+    }
+    main .loja .container .card a {
+        background: green;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    main .loja .container .card .button a:hover{
+        background: greenyellow;
+        color: black;
+        border: green solid 2px;
+    }
+
+
+
+
+
+
+
 
     /* ------   SECÇÃO SOBRE  -------*/
 
@@ -2492,6 +2565,78 @@
     main .home .container aside img{
         width: 90%;
     }
+
+    /* ------   SECÇÃO LOJA  -------*/
+
+    main .loja {
+        margin: auto;
+        padding: 100px 0;
+        height: 100vh;
+        text-align: center;
+    }
+    main .loja .title h2 {
+        font-size: 3rem;
+    }
+    main .loja .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+    main .loja .container .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 20%;
+        height: 80%;
+        margin: 5px 5px;
+        padding: 0px 15px;
+        text-align: center;
+        border: green solid 3px;
+        border-radius: 10px;
+        box-shadow: 10px 10px 10px 0px #0000002f;
+    }
+    main .loja .container .card:hover{
+        border: green solid 3px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgb(171, 251, 175));
+        z-index: 2;
+        transition: 0.9s all;
+        transform: translateY(-10px)
+    }
+    main .loja .container .card i{
+        font-size: 5rem;
+        margin: 5px;
+    }
+    main .loja .container .card h3{
+        font-size: 1.5rem;
+    }
+    main .loja .container .card p {
+        height: 150px;
+        margin: 20px 0;
+        font-size: 1.3rem;
+    }
+    main .loja .container .card a {
+        background: green;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    main .loja .container .card .button a:hover{
+        background: greenyellow;
+        color: black;
+        border: green solid 2px;
+    }
+
+
+
+
+
 
     /* ------   SECÇÃO SOBRE  -------*/
 
