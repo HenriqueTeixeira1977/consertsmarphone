@@ -18,3 +18,13 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
 	menu.classList.remove('active');
 });
+
+//  <!-- Google tag (gtag.js) -->
+//  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ME463Y3KBD"></script>
+//  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ME463Y3KBD');
+//  </script>
